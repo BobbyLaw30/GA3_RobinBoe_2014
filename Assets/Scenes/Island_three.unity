@@ -11522,7 +11522,6 @@ GameObject:
   - component: {fileID: 266574924}
   - component: {fileID: 266574927}
   - component: {fileID: 266574926}
-  - component: {fileID: 266574925}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Player
@@ -11545,20 +11544,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1328411079}
   m_LocalEulerAnglesHint: {x: 0, y: 197.029, z: 0}
---- !u!114 &266574925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266574923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1052bf9310e711247b383b681500199b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 500
-  playerBody: {fileID: 1328411079}
 --- !u!81 &266574926
 AudioListener:
   m_ObjectHideFlags: 0
@@ -53622,7 +53607,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1328411079}
   - component: {fileID: 1328411081}
-  - component: {fileID: 1328411080}
   - component: {fileID: 1328411082}
   m_Layer: 0
   m_Name: Player first person
@@ -53649,28 +53633,6 @@ Transform:
   - {fileID: 533586254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 14.642, z: 0}
---- !u!114 &1328411080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328411078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6aee9b82ad6734496bbcdb681e9dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1328411081}
-  speed: 6
-  gravity: -40
-  groundCheck: {fileID: 533586254}
-  groundDistance: 0.2
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 1
-  jump: 2
-  pickupDistance: 2
 --- !u!143 &1328411081
 CharacterController:
   m_ObjectHideFlags: 0
@@ -53706,9 +53668,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1328411078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f5649aef4c115045bf8425cfc037c4b, type: 3}
+  m_Script: {fileID: 11500000, guid: c004f5442f0315847b436de18d52dd66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WalkSpeed: 5
+  SPrintMultiplier: 2
+  JumpForce: 5
+  GroundCheckDistance: 1.5
+  LookSensitivityX: 1
+  LookSensitivityY: 1
+  MinYLookAngle: -90
+  MaxYlookAngle: 90
+  PlayerCamera: {fileID: 266574924}
+  Gravity: -9.8
 --- !u!1001 &1328412702
 PrefabInstance:
   m_ObjectHideFlags: 0

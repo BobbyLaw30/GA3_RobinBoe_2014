@@ -15,7 +15,7 @@ public class DialogueTrigger : MonoBehaviour
         if (other. CompareTag("Player") && !hasSpoken) 
         {
             other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, NPCTransform); 
-            hasSpoken = true; 
+            hasSpoken = true;  
         }
     }
 

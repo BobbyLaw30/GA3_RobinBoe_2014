@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
    private List<dialogueString> dialogueList; 
 
    [Header("Player")] 
-   [SerializeField] private Playermovement firstpersonController;  
+   [SerializeField] private RB_FirstPersonController  firstpersonController;  
    private Transform playerCamera; 
 
    private int currentDialogueIndex = 0;  
@@ -48,14 +48,14 @@ public class DialogueManager : MonoBehaviour
  
     private void DisableButtons() 
     {  
-        if (option1Button != null && option2Button != null) 
-        {
-             option1Button.interactable = false; 
+        
+        
+         option1Button.interactable = false; 
         option2Button.interactable = false; 
 
         option1Button.GetComponent<TMP_Text>().text = "No Option"; 
         option2Button.GetComponent<TMP_Text>().text = "No Option";
-        }
+        
 
        
     }
