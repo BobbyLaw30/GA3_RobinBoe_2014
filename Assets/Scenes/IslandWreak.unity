@@ -65571,7 +65571,33 @@ MonoBehaviour:
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: leave
+  - text: do you want to play HD2
+    isEnd: 0
+    isQuestion: 1
+    answerOption1: yes
+    answerOption2: no
+    option1IndexJump: 2
+    option2IndexJump: 3
+    startDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: nice
+    isEnd: 1
+    isQuestion: 0
+    answerOption1: 
+    answerOption2: 
+    option1IndexJump: 0
+    option2IndexJump: 0
+    startDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: Nooooooo
     isEnd: 1
     isQuestion: 0
     answerOption1: 

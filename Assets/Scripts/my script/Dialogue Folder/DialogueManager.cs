@@ -53,8 +53,8 @@ public class DialogueManager : MonoBehaviour
          option1Button.interactable = false; 
         option2Button.interactable = false; 
 
-        option1Button.GetComponent<TMP_Text>().text = "No Option"; 
-        option2Button.GetComponent<TMP_Text>().text = "No Option";
+        option1Button.GetComponentInChildren<TMP_Text>().text = "No Option"; 
+        option2Button.GetComponentInChildren<TMP_Text>().text = "No Option"; 
         
 
        
@@ -94,8 +94,8 @@ public class DialogueManager : MonoBehaviour
                 option1Button.interactable = true; 
                  option2Button.interactable = true; 
 
-                option1Button.GetComponent<TMP_Text>().text = line.answerOption1; 
-                option2Button.GetComponent<TMP_Text>().text = line.answerOption2;
+                option1Button.GetComponentInChildren<TMP_Text>().text = line.answerOption1; 
+                option2Button.GetComponentInChildren<TMP_Text>().text = line.answerOption2;
 
                 option1Button.onClick.AddListener(() => HandleOptionSelected(line.option1IndexJump));
                 option2Button.onClick.AddListener(() => HandleOptionSelected(line.option2IndexJump)); 
