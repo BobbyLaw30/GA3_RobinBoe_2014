@@ -9427,7 +9427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10007,8 +10007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 0, y: 100.15158}
+  m_SizeDelta: {x: 0, y: 200.3032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230705427
 MonoBehaviour:
@@ -10669,7 +10669,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250908422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10739,7 +10739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20689,14 +20689,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 217030203}
   - {fileID: 250908423}
+  - {fileID: 217030203}
   m_Father: {fileID: 230705426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -140, y: 0}
-  m_SizeDelta: {x: 280, y: 0}
+  m_AnchoredPosition: {x: -152.8988, y: -1.5}
+  m_SizeDelta: {x: 305.7977, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521415127
 MonoBehaviour:
@@ -20718,7 +20718,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 270, y: 60}
+  m_CellSize: {x: 300, y: 90}
   m_Spacing: {x: 0, y: 10}
   m_Constraint: 1
   m_ConstraintCount: 1
@@ -36059,8 +36059,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -65558,25 +65558,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueStrings:
-  - text: Hello
+  - text: 'Frank: so, another idiot on this island, who are you? '
     isEnd: 0
-    isQuestion: 0
-    answerOption1: 
-    answerOption2: 
-    option1IndexJump: 0
-    option2IndexJump: 0
+    isQuestion: 1
+    answerOption1: 'Nothing you need to worry about, are you Captain Frank?  '
+    answerOption2: 'just a traveler looking for something. Are you Captain Frank '
+    option1IndexJump: 1
+    option2IndexJump: 1
     startDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: do you want to play HD2
+  - text: 'Frank. just another idiot looking for the treasure that promises you luck
+      and money for the rest of your life.  '
     isEnd: 0
     isQuestion: 1
-    answerOption1: yes
-    answerOption2: no
+    answerOption1: ' so are you captain Frank or not, I dont have time for this '
+    answerOption2: 'I am also A idiot looking for the Treasure, are you Captain Frank?  '
     option1IndexJump: 2
+    option2IndexJump: 2
+    startDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: 'Frank: yes I am Captain frank, '
+    isEnd: 0
+    isQuestion: 1
+    answerOption1: do you still have the map ?
+    answerOption2: do you have a pice of the map ?
+    option1IndexJump: 3
     option2IndexJump: 3
     startDialogueEvent:
       m_PersistentCalls:
@@ -65584,21 +65598,22 @@ MonoBehaviour:
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: nice
-    isEnd: 1
-    isQuestion: 0
-    answerOption1: 
-    answerOption2: 
-    option1IndexJump: 0
-    option2IndexJump: 0
+  - text: 'Frank: If I do why should I just give it to you ?'
+    isEnd: 0
+    isQuestion: 1
+    answerOption1: Last time I check you did take the map from my father
+    answerOption2: Because You took that map from my father!
+    option1IndexJump: 4
+    option2IndexJump: 4
     startDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: Nooooooo
-    isEnd: 1
+  - text: What you are his son ? hmm just take it like you can see I have no use
+      for it any more it is place on the boat on the right for you
+    isEnd: 0
     isQuestion: 0
     answerOption1: 
     answerOption2: 
@@ -69550,8 +69565,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -69568,8 +69583,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -82991,8 +83006,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294309365
+  m_fontColor: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -83009,8 +83024,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
