@@ -65611,8 +65611,8 @@ MonoBehaviour:
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: What you are his son ? hmm just take it like you can see I have no use
-      for it any more it is place on the boat on the right for you
+  - text: 'What you are his son ? hmm Sadly, a women from the lost city have bean
+      here, trye to find here she knew your father '
     isEnd: 0
     isQuestion: 0
     answerOption1: 
@@ -67878,13 +67878,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675525306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15093711, y: 0.36766094, z: -0.073700845, w: 0.9146648}
-  m_LocalPosition: {x: -174.47, y: 0.705, z: -29.61}
-  m_LocalScale: {x: 1.969, y: 2.0996463, z: 2.0227}
+  m_LocalRotation: {x: -0.016682839, y: 0.3522017, z: 0.0058796476, w: 0.935757}
+  m_LocalPosition: {x: -171.46, y: -1.29, z: -25.4}
+  m_LocalScale: {x: 1.969, y: 2.0996463, z: 8.516578}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 19.287, y: 43.551, z: -1.447}
+  m_LocalEulerAnglesHint: {x: -2.027, y: 41.252, z: -0.043}
 --- !u!4 &1677405485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444698, guid: a1f656c69d2080948aa8bcd6456962b9, type: 3}
