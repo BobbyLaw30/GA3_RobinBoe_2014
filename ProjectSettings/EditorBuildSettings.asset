@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Island_three.unity
     guid: d7bef763def917b46a5834347771a9af
+  - enabled: 1
+    path: Assets/Scenes/final island ye.unity
+    guid: 5cba73359cf0ef148b11686c1ab7dfb5
   m_configObjects: {}
